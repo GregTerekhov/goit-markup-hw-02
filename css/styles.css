@@ -1,6 +1,13 @@
+:root {
+    --background-colour-secondary: #2f303a;
+    --background-colour-thirdy: #f5f4fa;
+    --text-colour-secondary: #757575;
+    --text-colour-thirdy: #ffffff;
+ }
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #212121;
 }
 
@@ -25,15 +32,15 @@ body {
     color: #2196f3;
 }
 
-.logo-second-piece {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
+.current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+    color: #2196f3;
 }
-
 .link {
     font-weight: 500;
     font-size: 14px;
@@ -55,7 +62,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--text-colour-thirdy);
     padding: 200px 452px;
 }
 
@@ -76,20 +83,15 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--text-colour-thirdy);
 }
 
 /* Features styles */
-
-.features > .title {
-    visibility: hidden;
-}
 
 .features .subtitle {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: inherit;
     text-transform: uppercase;
 }
 
@@ -97,25 +99,28 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-colour-secondary);
 }
 
 /* Activity styles */
 
-.activity > .title,
+.activity > .title, 
 .team > .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: inherit;
 }
 
 /* Team styles */
 
 .team {
-    background-color: #f5f4fa;
+    background-color: var(--background-colour-thirdy);
+}
+
+.team-member {
+    background-color: #ffffff;
 }
 
 .team .subtitle {
@@ -123,7 +128,6 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: inherit;
 }
 
 .team-description {
@@ -131,22 +135,18 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-transform: capitalize;
-    color: #757575;
-}
-
-.capital-letter {
-    text-transform: uppercase;
+    color: var(--text-colour-secondary);
 }
 
 /* Footer styles */
 
-.logo-third-piece {
+.logo-second-piece {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--text-colour-thirdy);
 }
 
 .map {
@@ -154,7 +154,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--text-colour-thirdy);
     text-decoration: none;
 }
 
@@ -168,12 +168,7 @@ body {
 }
 
 /* Portfolio styles */
-
 /* Projects styles */
-
-.projects > .title {
-    visibility: hidden;
-}
 
 .button-filter {
     font-family: inherit;
@@ -184,15 +179,20 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: inherit;
-    background-color: #f5f4fa;
+    background-color: var(--background-colour-thirdy);
 }
 
 .button-filter:hover,
 .button-filter:focus {
-    color: #ffffff;
+    color: var(--text-colour-thirdy);
     background-color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .projects-list .subtitle {
@@ -201,17 +201,21 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     text-transform: capitalize;
-    color: inherit;
 }
 
 .projects-list .description {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-colour-secondary);
 }
 
 /* Miscellanea */
+
+.features > .title,
+.projects > .title {
+    display: none;
+}
 
 .nav-pages,
 .feedback,
@@ -235,50 +239,5 @@ body {
 
 .hero,
 .cellar {
-    background-color: #2f303a;
-}
-
-
-/* Стилі фону та тексту
-:root {
-   --background-colour-primary: #FFFFFF;
-   --background-colour-secondary: #2F303A;
-   --background-colour-thirdy: #F5F4FA;
-   --background-colour-header: #ECECEC;
-   --text-colour-primary: #212121;
-   --text-colour-secondary: #757575;
-   --text-colour-thirdy: #FFFFFF;
-}
-
-.header {
-    background-color: var(--background-colour-header);
-}
-
-.hero,
-.footer {
     background-color: var(--background-colour-secondary);
 }
-
-.features,
-.activity {
-    background-color: var(--background-colour-primary);
-}
-
-.team {
-    background-color: var(--background-colour-thirdy);
-}
-
-.hero-title {
-    color: var(--text-colour-thirdy);
-}
-
-.title,
-.subtitle {
-    color: var(--text-colour-primary);
-}
-
-p {
-    color: var(--text-colour-secondary);
-} */
-
-
