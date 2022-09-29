@@ -224,7 +224,7 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    
+
     color: var(--text-colour-secondary);
 }
 
@@ -233,17 +233,6 @@ body {
 .features > .title,
 .projects > .title {
     display: none;
-}
-
-.nav-pages,
-.feedback,
-.connection,
-.features-list,
-.activity-list,
-.team-list,
-.filters-list,
-.projects-list {
-    list-style: none;
 }
 
 .link:hover,
@@ -258,4 +247,8 @@ body {
 .hero,
 .cellar {
     background-color: var(--bgc-secondary);
+}
+
+.list {
+    list-style: none;
 }
