@@ -12,10 +12,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 
     background-color: var(--bgc-primary);
     color: var(--text-colour-primary);
 }
+
+img {
+    display: block;
+    
+    max-width: 100%;
+    height: auto;   
+} 
 
 /* header styles */
 
@@ -24,7 +32,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.38;
-    letter-spacing: 0.03em;
     text-decoration: none;
 
     color: var(--text-colour-logo);
@@ -35,7 +42,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 
     color: var(--bgc-accent);
 }
@@ -81,12 +87,6 @@ body {
     width: 216px;
     height: 50px;
 
-    background-color: var(--bgc-accent);
-
-    cursor: pointer;
-}
-
-.button-text {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -94,7 +94,21 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 
+    background-color: var(--bgc-accent);
     color: var(--text-colour-thirdy);
+
+    cursor: pointer;
+}
+
+.button-hero:hover {
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* Features styles */
@@ -102,14 +116,12 @@ body {
 .features .subtitle {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .features-description {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 
     color: var(--text-colour-secondary);
 }
@@ -118,11 +130,9 @@ body {
 
 .activity > .title, 
 .team > .title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 /* Team styles */
@@ -139,13 +149,11 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .team-description {
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-transform: capitalize;
 
     color: var(--text-colour-secondary);
@@ -158,26 +166,25 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 
     color: var(--text-colour-thirdy);
 }
 
-.map {
+.address {
     font-style: normal;
+}
+
+.map {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
 
     color: var(--text-colour-thirdy);
 }
 
 .contacts {
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
 
     color: rgba(255, 255, 255, 0.6);
@@ -192,7 +199,6 @@ body {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: inherit;
     background-color: var(--bgc-thirdy);
@@ -213,7 +219,6 @@ body {
 }
 
 .projects-list .subtitle {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -223,16 +228,24 @@ body {
 .projects-list .description {
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
 
     color: var(--text-colour-secondary);
 }
 
 /* Miscellanea */
 
-.features > .title,
-.projects > .title {
-    display: none;
+.visually-hidden {
+    position: absolute;    
+    white-space: nowrap;    
+    width: 1px;   
+    height: 1px;
+    
+    overflow: hidden;   
+    border: 0;   
+    padding: 0;    
+    clip: rect(0 0 0 0);    
+    clip-path: inset(50%);    
+    margin: -1px;
 }
 
 .link:hover,
