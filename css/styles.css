@@ -1,11 +1,11 @@
 :root {
     --bgc-primary: #ffffff;
     --bgc-secondary: #2f303a;
-    --bgc-thirdy: #f5f4fa;
+    --bgc-tertiary: #f5f4fa;
     --bgc-accent: #2196f3;
     --text-colour-primary: #212121;
     --text-colour-secondary: #757575;
-    --text-colour-thirdy: #ffffff;
+    --text-colour-tertiary: #ffffff;
     --text-colour-accent: #2196f3;
     --text-colour-logo: #000000;
  }
@@ -78,7 +78,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: var(--text-colour-thirdy);
+    color: var(--text-colour-tertiary);
 
     padding: 200px 452px;
 }
@@ -95,7 +95,7 @@ img {
     letter-spacing: 0.06em;
 
     background-color: var(--bgc-accent);
-    color: var(--text-colour-thirdy);
+    color: var(--text-colour-tertiary);
 
     cursor: pointer;
 }
@@ -138,7 +138,7 @@ img {
 /* Team styles */
 
 .team {
-    background-color: var(--bgc-thirdy);
+    background-color: var(--bgc-tertiary);
 }
 
 .team-member {
@@ -167,7 +167,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
 
-    color: var(--text-colour-thirdy);
+    color: var(--text-colour-tertiary);
 }
 
 .address {
@@ -179,7 +179,7 @@ img {
     line-height: 1.71;
     text-decoration: none;
 
-    color: var(--text-colour-thirdy);
+    color: var(--text-colour-tertiary);
 }
 
 .contacts {
@@ -201,14 +201,14 @@ img {
     text-align: center;
 
     color: inherit;
-    background-color: var(--bgc-thirdy);
+    background-color: var(--bgc-tertiary);
 
     cursor: pointer;
 }
 
 .button-filter:hover,
 .button-filter:focus {
-    color: var(--text-colour-thirdy);
+    color: var(--text-colour-tertiary);
     background-color: var(--bgc-accent);
 }
 
