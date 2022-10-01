@@ -10,6 +10,14 @@
     --text-colour-logo: #000000;
  }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
@@ -263,5 +271,20 @@ img {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+}
+
+.logotype,
+.nav-pages,
+.feedback,
+.features,
+.subtitle,
+.features-description,
+.activity,
+.team,
+.team-description,
+.address {
+    outline: 2px solid tomato;
 }
